@@ -103,6 +103,20 @@ namespace Restraunt.Controllers
             }
             return View(menu);
         }
+        //browsw
+        public ActionResult Browse(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Menu menu = db.Menus.Find(id);
+            if (menu == null)
+            {
+                return HttpNotFound();
+            }
+            return View(menu);
+        }
 
         // POST: Menus/Delete/5
         [HttpPost, ActionName("Delete")]
