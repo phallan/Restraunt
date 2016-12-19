@@ -186,7 +186,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\about-us.jpg" />
     <Content Include="Assets\Images\banner.jpg" />
+    <Content Include="Assets\Images\BODY.jpg" />
+    <Content Include="Assets\Images\Contact_us.jpg" />
     <Content Include="Assets\Images\glass-of-badam-milk-665x443.jpg" />
     <Content Include="Assets\Images\Masala-Lassi-923x1024.jpg" />
     <Content Include="Content\bootstrap-theme.css" />

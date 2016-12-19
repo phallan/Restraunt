@@ -9,7 +9,11 @@
 
 </head>
 <body>
-    <div class="navbar  navbar-fixed-top">
+    <!--Pahul hallan 300876654
+        Shaffi khurana
+        assignment 2 - Dream Restraunt-->
+    <div class="navbar navbar-inverse  navbar-fixed-top">
+        <!--leave navbar inverse as it as. want black navbar-->
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,16 +28,19 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                       <li>@Html.ActionLink("Menu", "Index", "Menus")</li>
+                    <li>@Html.ActionLink("Menu", "Index", "Menus")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
 
-  
-    <div class="container body-content"><div margin-left="auto" margin-right="auto"><img alt="banner" src="~/Assets/Images/banner.jpg" /></div>
-        @RenderBody()
+
+    <div class="container body-content">
+        <div margin-left="auto" margin-right="auto"><img alt="banner" src="~/Assets/Images/body.jpg" /></div>
+        <div class="bodya">
+            @RenderBody()
+        </div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year Pahul 300876654 Shaffi</p>
